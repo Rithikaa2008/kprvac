@@ -3,26 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Alert</title>
-    <link rel="stylesheet" href="style.css">
+    <title>System Alert</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            border: 2px solid #00ff00;
+            padding: 40px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 20px #00ff00;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="overlay"></div>
-
-    <div class="popup">
-        <div class="popup-header">
-            <span class="icon">⚠️</span>
-            <h2>SYSTEM BREACH</h2>
-        </div>
-        <div class="popup-body">
-            <p>Your device has been infected. All files are currently being encrypted.</p>
-            <p class="warning">Do not restart or disconnect your device!</p>
-        </div>
-        <div class="popup-footer">
-            <button class="action-btn" onclick="alert('System locked! Initiating transfer...')">Acknowledge</button>
-        </div>
+    <div class="container">
+        <h1>Critical Error</h1>
+        <p>Connecting to secure server...</p>
     </div>
+
+    <script>
+        // Displays the browser alert immediately when the page loads
+        window.onload = function() {
+            alert("you are hacked");
+        };
+    </script>
 
 </body>
 </html>
