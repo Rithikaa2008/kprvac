@@ -1,71 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Search Box</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-        }
-        .search-container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .search-form {
-            display: flex;
-            gap: 10px;
-        }
-        .search-input {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 250px;
-        }
-        .search-button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .search-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
+html
 
-    <div class="search-container">
-        <!-- Replace YOUR_EMAIL@YOURDOMAIN.COM with your actual email address -->
-        <form action="https://formsubmit.co" method="POST" class="search-form">
-            
-            <!-- Honeypot field to block spam bots (hidden from real users) -->
-            <input type="text" name="_honey" style="display:none">
-            
-            <!-- Disable the default captcha page if desired (Optional) -->
-            <!-- <input type="hidden" name="_captcha" value="false"> -->
-            
-            <!-- Redirect URL after submission (Optional) -->
-            <!-- <input type="hidden" name="_next" value="https://yourwebsite.com"> -->
+<form action="https://formspree.io/f/xnjreoar" method="POST">
 
-            <!-- The search input field -->
-            <input type="text" name="Search Query" class="search-input" placeholder="Search..." required>
-            
-            <button type="submit" class="search-button">Search</button>
-        </form>
-    </div>
+<input type="text" name="search_query" placeholder="Enter your search..." required>
 
-</body>
-</html>
+<input type="hidden" name="_subject" value="New Search Query">
+
+<button type="submit">Search</button>
+
+</form>
